@@ -5,6 +5,10 @@ import { AppComponent } from './app.component';
 import { AppRoutingModule } from './app-routing.module';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutDiscgolfComponent } from './components/about-discgolf/about-discgolf.component';
+import { ContentComponent } from './components/content/content.component';
+import { DorianComponent } from './components/content/dorian/dorian.component';
+import { LinneaComponent } from './components/content/linnea/linnea.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 
 @NgModule({
@@ -12,6 +16,10 @@ import { AboutDiscgolfComponent } from './components/about-discgolf/about-discgo
     AppComponent,
     HeaderComponent,
     AboutDiscgolfComponent,
+    ContentComponent,
+    DorianComponent,
+    LinneaComponent,
+    FooterComponent,
   ],
   imports: [
     BrowserModule,
