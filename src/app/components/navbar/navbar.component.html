@@ -1,0 +1,21 @@
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+  <div class="logo-container">
+    <button class="logo">A-H</button>
+    <div class="logo-text" *ngIf="collapsed">AceHaven</div>
+    <button class="btn-close" *ngIf="collapsed">
+      <img src="assets/icons8-löschen-50.png">
+    </button>
+  </div>
+  <ul class="sidenav-nav">
+    <li class="sidenav-items">
+      <a class="sidenav-link">
+
+      <span id="text" class="sidenav-text" *ngIf="collapsed">Home</span>
+        <i id="icon1" class = "sidenav.icon">
+          <img id="icon" src="assets/icons8-menu-30.png" alt="Icon">
+        </i>
+      </a>
+
+    </li>
+  </ul>
+</div>

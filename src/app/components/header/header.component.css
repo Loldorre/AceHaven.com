@@ -1,9 +1,8 @@
 h1 {
   background: white;
-  margin-left: 1%;
+  margin-left: 5%;
   margin-top: 0;
   margin-bottom: 0;
-
 }
 
 header {
@@ -13,5 +12,8 @@ header {
   width: 100%;
 }
 
+.icon {
+  color: black;
+}
 
 
