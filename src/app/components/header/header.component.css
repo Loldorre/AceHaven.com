@@ -1,19 +1,20 @@
-h1 {
-  background: white;
-  margin-left: 5%;
-  margin-top: 0;
-  margin-bottom: 0;
-}
+
 
 header {
+  font-family: Bahnschrift, serif;
   background: white;
   text-align: left;
   padding: 9px;
-  width: 100%;
+  width: 99%;
+  border-bottom: 2px solid darkgray;
+}
+header h1, header p{
+  margin: 0 0 0 5%;
+  width: auto;
+  overflow-x: hidden;
+
 }
 
-.icon {
-  color: black;
+img{
+float: left;
 }
-
-
