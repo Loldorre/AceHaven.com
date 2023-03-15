@@ -4,7 +4,7 @@
   position: fixed;
   z-index: 1;
   top: 0;
-  width: 5rem;
+  width: 5%;
   height: 100vh;
   box-shadow: 0.063rem 0 1.25rem 0 #8690a3;
 }
@@ -13,12 +13,12 @@
 .logo-container {
   display: flex;
   align-items: center;
-  padding: 0.938rem 0938rem 0 0.938rem;
+  padding: 0;
   width: 100%;
 }
 
   .logo {
-    background: #fff;
+    background: grey;
     text-align: center;
     width: 3rem;
     min-width: 3rem;
@@ -28,6 +28,11 @@
     cursor: pointer;
     border: none;
   }
+
+  .logo:hover {
+    background-color: darkgray;
+  }
+
 
   .logo-text{
     margin-left: 1.5rem;
@@ -47,13 +52,19 @@
     margin-left: 6%;
     position: center;
     font-size: 20px;
-    display: inline-block;
     margin-bottom: 1%;
   }
 
-  #text {
+  .listText {
+    font-size: 20px;
+    display: inline-block;
+    height: 2%;
+    position: fixed;
+    color: black;
+    transition: ease-out;
 
   }
+
 
   li {
     height: 4%;
@@ -61,6 +72,9 @@
 
   .sidenav-nav {
     list-style-type: none;
+    float: left;
+    width: 100%;
+
   }
 
   .sidenav-nav li:hover{
@@ -69,16 +83,29 @@
 
   .logo-container{
     margin-bottom: 5%;
+    margin-top: 2%;
+    margin-left: 2%;
   }
 
   .sidenav-icon {
     height: 2%;
-    display:inline-block;
     margin-left: 2%;
+    display: inline-block;
   }
 
   .sidenav-collapsed {
-    width: 16.5625rem;
+    width: 23%;
+    display: inline-block;
+    position: fixed;
+  }
+
+  ul {
+    float: left;
+    padding: 0;
+  }
+
+  img {
+    margin-right: 100%;
   }
 
 
