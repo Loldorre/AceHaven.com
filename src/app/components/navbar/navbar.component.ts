@@ -9,5 +9,15 @@ import { Component } from '@angular/core';
 
 
 export class NavbarComponent {
+
   collapsed = true;
+
+  onClickClose() {
+    this.collapsed = false;
+  }
+
+  onClickOpen() {
+    this.collapsed = true;
+
+  }
 }
