@@ -1,20 +1,10 @@
 .header {
   position: relative;
-  margin-top: 0%;
-  padding: 0%;
+  top: 0;
 }
 
-h1 {
-  font-family: Bahnschrift, serif;
-  margin: 1% 1% 1% 3%;
-  padding: 0;
-  color: white;
-}
 .content {
   margin-top: 3%;
-  background-color: grey;
-  margin-right: 50%;
-  margin-left: 1%;
   border: solid white;
 }
 

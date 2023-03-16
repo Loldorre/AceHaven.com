@@ -1,10 +1,9 @@
 <body>
 <nav class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" >
   <div class="logo-container">
-    <button  class="logo" (click)="onClickOpen()"><img id="menu-button" src="assets/navicon.png"></button>
-    <div class="logo-text" *ngIf="collapsed">AceHaven</div>
+    <button  class="logo" (click)="onClickOpen()"><img id="menu-button" src="assets/navicon.png" alt="navicon"></button>
     <button class="btn-close" *ngIf="collapsed" (click)="onClickClose()">
-      <img src="assets/closeicon.png">
+      <img src="assets/closeicon.png" alt="close icon">
     </button>
   </div>
 

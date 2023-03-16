@@ -1,13 +1,18 @@
 body{
   background-color: rgba(255,255,255, 0.8) ;
-  border: 2px solid darkgray;
+  border-top: 2px solid darkgray;
   border-radius: 10px;
-  width:75%;
-  height: 220%;
-  position: absolute;
+  width:80%;
+  height: fit-content;
+  position: relative;
   font-family: Bahnschrift, serif;
   margin-top: 5%;
-  margin-left: 20%;
-  text-align: center;
+  margin-left: 15%;
+}
+body h1{
+  color: white;
+  margin-bottom: 5%;
+  width: fit-content;
+  background-color: grey;
 }
 
