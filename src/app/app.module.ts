@@ -8,6 +8,9 @@ import { AboutDiscgolfComponent } from './components/about-discgolf/about-discgo
 import { HomeComponent } from './components/home/home.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { LoginComponent } from './components/login/login.component';
+import { ContentComponent} from "./components/content/content.component";
+import { DorianComponent} from "./components/content/dorian/dorian.component";
+import { LinneaComponent} from "./components/content/linnea/linnea.component";
 
 @NgModule({
   declarations: [
@@ -17,6 +20,9 @@ import { LoginComponent } from './components/login/login.component';
     HomeComponent,
     NavbarComponent,
     LoginComponent,
+    ContentComponent,
+    DorianComponent,
+    LinneaComponent
   ],
   imports: [
     BrowserModule,

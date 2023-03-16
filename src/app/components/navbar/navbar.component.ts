@@ -10,7 +10,7 @@ import { Component } from '@angular/core';
 
 export class NavbarComponent {
 
-  collapsed = true;
+  collapsed = false;
 
   onClickClose() {
     this.collapsed = false;

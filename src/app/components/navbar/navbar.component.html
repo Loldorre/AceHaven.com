@@ -1,6 +1,6 @@
 <nav class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" >
   <div class="logo-container">
-    <button class="logo" (click)="onClickOpen()"><img src="assets/icons8-menu-30.png"></button>
+    <button  class="logo" (click)="onClickOpen()"><img id="menu-button" src="assets/icons8-menu-30.png"></button>
     <div class="logo-text" *ngIf="collapsed">AceHaven</div>
     <button class="btn-close" *ngIf="collapsed" (click)="onClickClose()">
       <img src="assets/icons8-löschen-50.png">
@@ -15,12 +15,17 @@
     </li>
     <li class="AboutDiscolf" >
       <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="sidenav-icon">
-        <img src="assets/icons8-zuhause-17.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About Discgolf</a>
+        <img src="assets/icons8-frisbee-50.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About Discgolf</a>
       </a>
     </li>
     <li class="Home">
-      <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" class = "sidenav-icon">
-        <img src="assets/icons8-zuhause-17.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About Discgo</a>
+      <a routerLink="/content" routerLinkActive="active" ariaCurrentWhenActive="page" class = "sidenav-icon">
+        <img src="assets/icons8-about-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About us</a>
+      </a>
+    </li>
+    <li class="Home">
+      <a routerLink="/login" routerLinkActive="active" ariaCurrentWhenActive="page" class = "sidenav-icon">
+        <img src="assets/icons8-login-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Login</a>
       </a>
     </li>
   </ul>

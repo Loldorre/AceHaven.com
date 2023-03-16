@@ -3,18 +3,16 @@
 header {
   font-family: Bahnschrift, serif;
   background: white;
-  text-align: left;
-  padding: 9px;
+  text-align: center;
+  padding: 2%;
   width: 99%;
-  border-bottom: 2px solid darkgray;
+  margin-top: 0;
+
 }
 header h1, header p{
-  margin: 0 0 0 5%;
+  margin: 0 10% 0 10%;
   width: auto;
   overflow-x: hidden;
-
 }
 
-img{
-float: left;
-}
+
