@@ -1,0 +1,30 @@
+<nav class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" >
+  <div class="logo-container">
+    <button class="logo" (click)="onClickOpen()"><img src="assets/icons8-menu-30.png"></button>
+    <div class="logo-text" *ngIf="collapsed">AceHaven</div>
+    <button class="btn-close" *ngIf="collapsed" (click)="onClickClose()">
+      <img src="assets/icons8-löschen-50.png">
+    </button>
+  </div>
+
+  <ul class="sidenav-nav">
+      <li class="Home">
+        <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" class = "sidenav-icon">
+          <img src="assets/icons8-zuhause-17.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Home</a>
+        </a>
+    </li>
+    <li class="AboutDiscolf" >
+      <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="sidenav-icon">
+        <img src="assets/icons8-zuhause-17.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About Discgolf</a>
+      </a>
+    </li>
+    <li class="Home">
+      <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page" class = "sidenav-icon">
+        <img src="assets/icons8-zuhause-17.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About Discgo</a>
+      </a>
+    </li>
+  </ul>
+</nav>
+<router-outlet></router-outlet>
+
+

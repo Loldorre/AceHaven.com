@@ -2,7 +2,9 @@ body{
   background-color: white;
   border: 2px solid darkgray;
   border-radius: 10px;
-  width:70%;
+  width:75%;
+  height: 220%;
+  position: absolute;
   font-family: Bahnschrift, serif;
   margin-top: 5%;
   margin-left: 20%;

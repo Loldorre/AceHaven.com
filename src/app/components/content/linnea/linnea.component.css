@@ -1,11 +1,10 @@
 img{
   width:200px;
 }
-h2, p{
-  margin-right: 2%;
-}
+
 
 body{
-  width: 35%;
-  margin-left: 2%;
+  width: 40%;
+  margin-right: 4%;
+  float:right;
 }
