@@ -1,6 +1,5 @@
 body{
-  background-color: rgba(255,255,255, 0.8) ;
-  border-top: 2px solid darkgray;
+  border-top: 2px solid skyblue;
   border-radius: 10px;
   width:80%;
   height: fit-content;
@@ -13,6 +12,6 @@ body h1{
   color: white;
   margin-bottom: 5%;
   width: fit-content;
-  background-color: grey;
+  background-color: skyblue;
 }
 

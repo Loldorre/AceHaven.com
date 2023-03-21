@@ -12,6 +12,13 @@ import { ContentComponent} from "./components/content/content.component";
 import { DorianComponent} from "./components/content/dorian/dorian.component";
 import { LinneaComponent} from "./components/content/linnea/linnea.component";
 import { FooterComponent } from './components/footer/footer.component';
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideFirestore,getFirestore} from '@angular/fire/firestore';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+import {FormsModule} from "@angular/forms";
+
 
 
 @NgModule({
@@ -26,10 +33,16 @@ import { FooterComponent } from './components/footer/footer.component';
     DorianComponent,
     LinneaComponent,
     FooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideFirestore(() => getFirestore()),
+    provideStorage(() => getStorage()),
+    FormsModule
   ],
 
   providers: [],

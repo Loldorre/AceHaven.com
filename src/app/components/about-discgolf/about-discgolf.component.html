@@ -1,7 +1,7 @@
 <body>
 <h1>ADD YOUR FAVORITE DISC</h1>
 
-<form>
+<form #f="ngForm" (ngSubmit)="addData(f)">
   <div class="lbl">
   <label for="manufacturer">Manufacturer:</label><br>
   <label for="dname">Model name:</label><br>
@@ -12,15 +12,15 @@
   </div>
 
   <div class="inp">
-  <input type="text" id="manufacturer" name="manufacuturer"><br>
-  <input type="text" id="dname" name="discname"><br>
-  <input type="number" min=1 max=14 id="speed" name="speed"><br>
-  <input type="number" min=1 max=7 id="glide" name="glide"><br>
-  <input type="number" min=-5 max=1 id="turn" name="turn"><br>
-  <input type="number" min=0 max=5 id="fade" name="fade"><br>
+  <input type="text" id="manufacturer" name="manufacuturer" ngModel><br>
+  <input type="text" id="dname" name="discname" ngModel><br>
+  <input type="number" min=1 max=14 id="speed" name="speed" ngModel><br>
+  <input type="number" min=1 max=7 id="glide" name="glide" ngModel><br>
+  <input type="number" min=-5 max=1 id="turn" name="turn" ngModel><br>
+  <input type="number" min=0 max=5 id="fade" name="fade" ngModel><br>
   </div>
 
-  <input type="submit" value="ADD">
+  <button type="submit"> ADD</button>
 
 </form>
 </body>
