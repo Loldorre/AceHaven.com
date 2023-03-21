@@ -1,4 +1,8 @@
-  <h1>WELCOME TO ACEHAVEN!</h1>
+  <h1>OUR USERS FAVORITE DISCS</h1>
 
+  <ul>
+    <li>Manufacturer, disc model, speed, glide, turn, fade</li>
+    <li *ngFor = "let data of usersDisc |async">{{data.manufacuturer}},  {{data.discname}} / [{{data.speed}} / {{data.glide}} / {{data.turn}} / {{data.fade}}]</li>
+</ul>
 
 

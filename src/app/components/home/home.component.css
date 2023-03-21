@@ -5,11 +5,15 @@
 h1 {
   text-align: center;
   margin-left: 35%;
+  margin-bottom: 50px;
   width:33%;
   font-family: Bahnschrift, serif;
   padding: 0;
   color: white;
   background-color: skyblue;
+}
+ul{
+  text-align: center;
 }
 
 
