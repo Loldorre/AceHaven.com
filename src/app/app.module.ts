@@ -12,6 +12,17 @@ import { ContentComponent} from "./components/content/content.component";
 import { DorianComponent} from "./components/content/dorian/dorian.component";
 import { LinneaComponent} from "./components/content/linnea/linnea.component";
 import { FooterComponent} from "./components/footer/footer.component";
+import { initializeApp,provideFirebaseApp } from '@angular/fire/app';
+import { environment } from '../environments/environment';
+import { provideAuth,getAuth } from '@angular/fire/auth';
+import { provideDatabase,getDatabase } from '@angular/fire/database';
+import { provideFirestore,getFirestore } from '@angular/fire/firestore';
+import { provideMessaging,getMessaging } from '@angular/fire/messaging';
+import { providePerformance,getPerformance } from '@angular/fire/performance';
+import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
+import { provideStorage,getStorage } from '@angular/fire/storage';
+
+
 
 
 @NgModule({
@@ -26,11 +37,19 @@ import { FooterComponent} from "./components/footer/footer.component";
     DorianComponent,
     LinneaComponent,
     FooterComponent
-
   ],
+
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideAuth(() => getAuth()),
+    provideDatabase(() => getDatabase()),
+    provideFirestore(() => getFirestore()),
+    provideMessaging(() => getMessaging()),
+    providePerformance(() => getPerformance()),
+    provideRemoteConfig(() => getRemoteConfig()),
+    provideStorage(() => getStorage())
   ],
 
   providers: [],

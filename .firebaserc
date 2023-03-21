@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "acehaven-b9866": {
+      "hosting": {
+        "AceHaven": [
+          "acehaven-b9866"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "acehaven-b9866"
+  }
+}

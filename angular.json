@@ -97,6 +97,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "AceHaven:build:production",
+            "firebaseProject": "acehaven-b9866",
+            "firebaseHostingSite": "acehaven-b9866"
+          }
         }
       }
     }
