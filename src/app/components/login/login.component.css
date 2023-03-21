@@ -1,0 +1,26 @@
+.displayTable {
+  margin-left: 20%;
+}
+
+.content {
+  background-color: white;
+  margin: 5% 30%;
+  position: center;
+}
+
+.forms {
+  margin-left: 22%;
+  margin-bottom: 5%;
+}
+
+h1 {
+  margin-left: 15%;
+}
+
+input {
+  outline: 0;
+  border-width: 0 0 2px;
+  border-color: black;
+  margin-bottom: 5%;
+  height: 20px;
+}
