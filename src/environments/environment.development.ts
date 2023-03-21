@@ -7,4 +7,5 @@ export const environment = {
     apiKey: 'AIzaSyCRR6oyLxr0LHej8Pxol-x_3bjGv3W0SaI',
     authDomain: 'acehaven-5b524.firebaseapp.com',
     messagingSenderId: '1091192864091',
-  },};
+  },
+};
