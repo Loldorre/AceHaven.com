@@ -2,5 +2,12 @@
   <h1>Welcome to the Home Of Discgolf</h1>
 </div>
 
+<div *ngIf="(afAuth.user | async) ">
+User is Logged in
+</div>
+<div *ngIf="!(afAuth.user | async) ">
+  User is Not Logged in
+</div>
+
 
 

@@ -1,0 +1,83 @@
+<div class="displayTable">
+  <div class="displayTableCell">
+    <div class="authBlock">
+      <h3>Sign Up</h3>
+      <div class="formGroup">
+        <input
+          type="email"
+          class="formControl"
+          placeholder="Email Address"
+          #userEmail
+          required
+        />
+      </div>
+      <div class="formGroup">
+        <input
+          type="password"
+          class="formControl"
+          placeholder="Password"
+          #userPwd
+          required
+        />
+      </div>
+      <div class="formGroup">
+        <input
+          type="button"
+          class="btn btnPrimary"
+          value="Sign Up"
+          (click)="authService.SignUp(userEmail.value, userPwd.value)"
+        />
+      </div>
+      <div class="formGroup">
+        <span class="or"><span class="orInner">Or</span></span>
+      </div>
+      <!-- Continue with Google -->
+      <div class="formGroup">
+        <button
+          type="button"
+          class="btn googleBtn"
+          (click)="authService.GoogleAuth()"
+        >
+          <i class="fab fa-google-plus-g"></i>
+          Continue with Google
+        </button>
+      </div>
+    </div>
+    <div class="redirectToLogin">
+      <span
+      >Already have an account?
+        <span class="redirect" routerLink="/login">Log In</span></span
+      >
+    </div>
+  </div>
+</div>
+
+
+<!--<mat-card>
+  <form >
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Full Name</mat-label>
+        <input autocomplete="off" formControlName="displayName" type="text" placeholder="Full Name">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Email</mat-label>
+        <input autocomplete="off" formControlName="displayName" type="email" placeholder="Email">
+      </mat-form-field>
+    </p>
+    <p>
+      <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input autocomplete="off" formControlName="displayName" type="password" placeholder="Password">
+      </mat-form-field>
+    </p>
+    <div *ngIf="firebaseErorMessage != ''" class="error-style">
+      <span> {{ firebaseErorMessage }}</span>
+    </div>
+
+    <button mat-raised-button color="primary">Register</button>
+
+  </form>
+</mat-card> -->
