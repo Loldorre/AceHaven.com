@@ -16,7 +16,7 @@ import {DashboardComponent} from "./components/dashboard/dashboard.component";
 const routes: Routes = [
   {path: '', redirectTo: '/login', pathMatch: 'full' },
   {path: 'home', component: HomeComponent},
-  {path: 'about', component: AboutDiscgolfComponent},
+  {path: 'about', component: AboutDiscgolfComponent, canActivate: [AuthGuard]},
   {path: 'content', component: ContentComponent},
   {path: 'login', component: LoginComponent},
   {path: 'verify', component: VerifyEmailComponent},
@@ -27,7 +27,8 @@ const routes: Routes = [
 
 @NgModule({
   exports: [ RouterModule ],
-  imports: [ RouterModule.forRoot(routes) ]
+  imports: [ RouterModule.forRoot(routes) ],
+  providers: [ AuthGuard ]
 })
 
 export class AppRoutingModule { }
