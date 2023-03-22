@@ -4,5 +4,21 @@ mat-card {
 }
 
 .displayTable {
-  margin-left: 20%;
+  text-align: center;
+  border-top: 2px solid skyblue;
+  border-radius: 5px;
+  width: 80%;
+margin: 2% 0 0 10%;
 }
+h1{
+  color: white;
+  background-color: skyblue;
+  padding: 0 10px 0 10px;
+  width: fit-content;
+  margin-left: 43.6%;
+}
+
+.formGroup{
+  margin: 3px 0 3px 0;
+}
+

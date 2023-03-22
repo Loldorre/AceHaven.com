@@ -29,12 +29,9 @@ import { ForgorPasswordComponent } from './components/forgor-password/forgor-pas
 import { AuthService } from "./shared/services/auth.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { MatButtonHarness} from "@angular/material/button/testing";
-import { MatCardModule} from "@angular/material/card";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AngularFireModule} from "@angular/fire/compat";
-import {MatButtonModule} from "@angular/material/button";
-import {MatInputModule} from "@angular/material/input";
+
 
 
 @NgModule({
@@ -67,12 +64,9 @@ import {MatInputModule} from "@angular/material/input";
     provideRemoteConfig(() => getRemoteConfig()),
     provideStorage(() => getStorage()),
     BrowserAnimationsModule,
-    MatCardModule,
-    MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase),
     FormsModule,
     ReactiveFormsModule,
-    MatInputModule
 
   ],
 

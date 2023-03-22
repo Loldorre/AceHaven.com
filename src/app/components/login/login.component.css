@@ -1,5 +1,10 @@
 .displayTable {
-  margin-left: 20%;
+  text-align: center;
+  border-top: 2px solid skyblue;
+  width:80%;
+  margin-left: 10%;
+  border-radius: 5px;
+  margin-top: 2%;
 }
 
 .content {
@@ -14,7 +19,11 @@
 }
 
 h1 {
-  margin-left: 15%;
+  color: white;
+  background-color: skyblue;
+  width: fit-content;
+  padding: 0 10px 0 10px;
+  margin:5% 0 5% 43.5%;
 }
 
 input {
