@@ -1,11 +1,35 @@
 .displayTable {
-  margin-left: 20%;
+  margin-left: 30%;
+}
+
+img {
+  width: 30px;
+  height: 30px;
+}
+
+
+h3 {
+  margin-top: 2%;
+  font-size: 30px;
+  margin-bottom: 3%;
+  margin-right: 29%;
+  padding: 5px;
+  border-radius: 20px;
 }
 
 .content {
   background-color: white;
   margin: 5% 30%;
   position: center;
+}
+
+.formGroup1 {
+  margin-left: 15%;
+  display: flex;
+}
+
+.formGroup {
+  margin-left: 20%;
 }
 
 .forms {
@@ -21,6 +45,58 @@ input {
   outline: 0;
   border-width: 0 0 2px;
   border-color: black;
-  margin-bottom: 5%;
-  height: 20px;
+  margin-bottom: 3%;
+  height: 30px;
+  font-size: 17px;
+  margin-left: 1%;
+
 }
+
+.redirectToLogin {
+  font-size: 20px;
+  margin-right: 2%;
+
+}
+
+#SignButton {
+  margin-left: 1%;
+}
+
+button {
+  align-items: center;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 15em;
+  margin-bottom: 2%;
+  background: linear-gradient(0deg, skyblue 0%, deepskyblue 100%);
+  padding: 1%;
+
+}
+
+button:hover {
+  background: lightblue;
+}
+
+.loginbutton {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: black;
+  background: linear-gradient(0deg, skyblue 0%, deepskyblue 100%);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 15em;
+  margin-bottom: 2%;
+}
+
+.loginbutton:hover {
+  background: lightblue;
+}
+
+
+
