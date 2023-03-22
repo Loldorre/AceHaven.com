@@ -1,16 +1,32 @@
 
 
-
+body{
+  margin-top: 2%;
+  border-top: 2px solid skyblue;
+  border-radius: 5px;
+  width: 75%;
+  margin-left: 15%;
+}
 
 h1 {
   text-align: center;
   margin-left: 35%;
   margin-bottom: 50px;
-  width:33%;
+  width: 33%;
   font-family: Bahnschrift, serif;
   padding: 0;
   color: white;
   background-color: skyblue;
+}
+
+table{
+  margin-left: 28%;
+}
+table tr th{
+  padding: 10px;
+}
+table tr td{
+  padding:10px;
 }
 ul{
   text-align: center;

@@ -1,8 +1,25 @@
-  <h1>OUR USERS FAVORITE DISCS</h1>
+<body>
 
-  <ul>
-    <li>Manufacturer, disc model, speed, glide, turn, fade</li>
-    <li *ngFor = "let data of usersDisc |async">{{data.manufacuturer}},  {{data.discname}} / [{{data.speed}} / {{data.glide}} / {{data.turn}} / {{data.fade}}]</li>
-</ul>
+<h1>OUR USERS FAVORITE DISCS</h1>
 
+  <table>
+    <tr>
+      <th>Manufacturer</th>
+      <th>Disc name</th>
+      <th>Speed</th>
+      <th>Glide</th>
+      <th>Turn</th>
+      <th>Fade</th>
+    </tr>
+    <tr *ngFor="let usersDisc of usersDisc |async">
+      <td>{{usersDisc.manufacuturer}}</td>
+      <td>{{usersDisc.discname}}</td>
+      <td>{{usersDisc.speed}}</td>
+      <td>{{usersDisc.glide}}</td>
+      <td>{{usersDisc.turn}}</td>
+      <td>{{usersDisc.fade}}</td>
+    </tr>
 
+  </table>
+
+</body>

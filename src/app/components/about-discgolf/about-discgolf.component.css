@@ -3,6 +3,7 @@ body{
   margin: 5% 0 0 10%;
   border-top: 2px solid skyblue;
   border-radius: 10px;
+
 }
 h1{
   text-align: center;
@@ -27,6 +28,9 @@ form{
 
 .inp input{
   height :10px;
+}
+.ratings input{
+  width: 40px;
 }
 
 input[type="submit"]{
