@@ -8,7 +8,7 @@ import {Observable} from "rxjs";
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent {
-usersDisc!: Observable<any>;
+  usersDisc!: Observable<any>;
   constructor(private firestore: Firestore) {
     this.getDiscs();
   }
