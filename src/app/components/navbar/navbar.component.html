@@ -13,7 +13,7 @@
           <img src="assets/icons8-zuhause-17.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Home</a>
         </a>
     </li>
-    <li class="AboutDiscolf" >
+    <li class="AboutDiscolf" *ngIf="loged()" >
       <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page" class="sidenav-icon">
         <img src="assets/icons8-frisbee-50.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About Discgolf</a>
       </a>
@@ -23,19 +23,19 @@
         <img src="assets/icons8-about-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">About us</a>
       </a>
     </li>
-    <li class="Home">
+    <li class="Home" *ngIf="loged() === false">
       <a routerLink="/login" routerLinkActive="active"  class = "sidenav-icon">
         <img src="assets/icons8-login-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Login</a>
       </a>
     </li>
-    <li class="Home">
+    <li class="Home" *ngIf="loged() === false">
       <a routerLink="/register" routerLinkActive="active"  class = "sidenav-icon">
-        <img src="assets/icons8-login-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Register</a>
+        <img src="assets/icons8-sign-up-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Register</a>
       </a>
     </li>
-    <li class="Home">
+    <li class="Home" *ngIf="loged()">
       <a routerLink="/dashboard" routerLinkActive="active"  class = "sidenav-icon">
-        <img src="assets/icons8-login-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Dashboard</a>
+        <img src="assets/icons8-user-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Dashboard</a>
       </a>
     </li>
   </ul>

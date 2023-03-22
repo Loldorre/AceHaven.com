@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from "../../shared/services/auth.service";
 
 
 @Component({
@@ -10,7 +11,23 @@ import { Component } from '@angular/core';
 
 export class NavbarComponent {
 
+  authService: AuthService;
+
+  constructor(authService: AuthService) {
+    this.authService = authService;
+  }
+
   collapsed = false;
+  logedIn = false;
+
+  loged() : boolean{
+    if (this.authService.isLoggedIn) {
+      return this.logedIn = true;
+    } else {
+      return this.logedIn = false;
+    }
+  }
+
 
   onClickClose() {
     this.collapsed = false;
@@ -18,6 +35,5 @@ export class NavbarComponent {
 
   onClickOpen() {
     this.collapsed = true;
-
   }
 }

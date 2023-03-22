@@ -70,7 +70,9 @@ import {MatInputModule} from "@angular/material/input";
     MatCardModule,
     MatButtonModule,
     AngularFireModule.initializeApp(environment.firebase),
-    FormsModule, ReactiveFormsModule, MatInputModule
+    FormsModule,
+    ReactiveFormsModule,
+    MatInputModule
 
   ],
 
