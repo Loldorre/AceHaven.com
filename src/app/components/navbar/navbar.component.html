@@ -38,6 +38,11 @@
         <img src="assets/icons8-user-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Dashboard</a>
       </a>
     </li>
+    <li class="Home" (click)="authService.SignOut()" *ngIf="loged()">
+      <a routerLink="/login" routerLinkActive="active"  class = "sidenav-icon">
+        <img src="assets/icons8-logout-44.png" alt="Icon"> <a class="listText" *ngIf="collapsed">Logout</a>
+      </a>
+    </li>
   </ul>
 </nav>
 <router-outlet></router-outlet>

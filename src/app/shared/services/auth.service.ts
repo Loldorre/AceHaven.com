@@ -4,6 +4,7 @@ import * as auth from 'firebase/auth';
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {AngularFirestore, AngularFirestoreDocument,} from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
+import {user} from "@angular/fire/auth";
 
 
 
