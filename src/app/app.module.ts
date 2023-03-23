@@ -23,13 +23,12 @@ import { providePerformance,getPerformance } from '@angular/fire/performance';
 import { provideRemoteConfig,getRemoteConfig } from '@angular/fire/remote-config';
 import { provideStorage,getStorage } from '@angular/fire/storage';
 
-import { VerifyEmailComponent } from './components/verify-email/verify-email.component';
 import { RegisterComponent } from './components/register/register.component';
 import { ForgorPasswordComponent } from './components/forgor-password/forgor-password.component';
 import { AuthService } from "./shared/services/auth.service";
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-import { MatButtonHarness} from "@angular/material/button/testing";
+
 import { MatCardModule} from "@angular/material/card";
 import { FormsModule, ReactiveFormsModule } from "@angular/forms";
 import { AngularFireModule} from "@angular/fire/compat";
@@ -49,7 +48,6 @@ import {MatInputModule} from "@angular/material/input";
     DorianComponent,
     LinneaComponent,
     FooterComponent,
-    VerifyEmailComponent,
     RegisterComponent,
     ForgorPasswordComponent,
     DashboardComponent

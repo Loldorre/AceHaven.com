@@ -1,10 +1,12 @@
 p{
  font-family: Bahnschrift, serif;
+  margin-top: 13px;
 }
 footer{
   background-color: white;
   bottom: 0;
   margin-top: 50%;
+  height: 50px;
   padding:0;
   width:100%;
   text-align: center;

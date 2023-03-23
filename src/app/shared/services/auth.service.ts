@@ -1,10 +1,10 @@
 import { Injectable, NgZone } from '@angular/core';
 import { User } from '../services/user';
-import * as auth from 'firebase/auth';
+
 import { AngularFireAuth } from '@angular/fire/compat/auth';
 import {AngularFirestore, AngularFirestoreDocument,} from '@angular/fire/compat/firestore';
 import { Router } from '@angular/router';
-import {user} from "@angular/fire/auth";
+
 
 
 
@@ -13,15 +13,13 @@ import {user} from "@angular/fire/auth";
 })
 
 export class AuthService {
-  userData: any; // Save logged in user data
+  userData: any;
   constructor(
-    public afs: AngularFirestore, // Inject Firestore service
-    public afAuth: AngularFireAuth, // Inject Firebase auth service
+    public afs: AngularFirestore,
+    public afAuth: AngularFireAuth,
     public router: Router,
-    public ngZone: NgZone // NgZone service to remove outside scope warning
+
   ) {
-    /* Saving user data in localstorage when
-    logged in and setting up null when logged out */
     this.afAuth.authState.subscribe((user) => {
       if (user) {
         this.userData = user;
@@ -38,13 +36,10 @@ export class AuthService {
     return this.afAuth
       .signInWithEmailAndPassword(email, password)
       .then((result) => {
-        console.log("Point1")
         this.SetUserData(result.user);
         this.afAuth.authState.subscribe((user) => {
           if (user) {
-            console.log("Why dousnt this fucking work")
             this.router.navigate(['dashboard']);
-            console.log("Still does not work")
           }
         })
       })
@@ -57,9 +52,6 @@ export class AuthService {
     return this.afAuth
       .createUserWithEmailAndPassword(email, password)
       .then((result) => {
-        /* Call the SendVerificaitonMail() function when new user sign
-        up and returns promise */
-        this.SendVerificationMail();
         this.SetUserData(result.user);
         this.router.navigate(['/dashboard']);
       })

@@ -5,15 +5,20 @@ body{
   border-radius: 10px;
 }
 h1{
-  text-align: center;
   color: white;
-  background-color: skyblue;
+  margin-bottom: 5%;
+  margin-top: 0;
   width: fit-content;
-  margin-left: 30%;
-  padding: 0 10px 0 10px;
+  background-color: skyblue;
+  margin-left: 33%;
+  font-weight: bold;
+  padding: 5px;
+  border-radius: 10px;
 }
+
 form{
-  margin-left: 40%;
+  margin-left: 35%;
+  margin-bottom: 2%;
 }
 
 .lbl{
@@ -38,4 +43,23 @@ input[type="submit"]{
   margin-left: 10%;
   width: 12%;
   padding: 6px;
+}
+
+button {
+  margin-top: 2%;
+  font-family: inherit;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 0.7em 1.4em 0.7em 1.1em;
+  color: black;
+  background: linear-gradient(0deg, skyblue 0%, deepskyblue 100%);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 15em;
+  margin-bottom: 2%;
+
+}
+
+button:hover {
+  background: lightblue;
 }
